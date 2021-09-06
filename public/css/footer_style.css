@@ -1,0 +1,18 @@
+.footer{
+    /* Use Flex Layout */
+    display: flex;
+    flex-direction: row;
+    /*distribute space left evenly*/
+    justify-content: space-evenly;
+    /* Centralize the box/container */
+    max-width: 800px;
+    /*alignment*/
+    text-align: center;
+    /*font-color*/
+    color: white;
+    font-weight: lighter;
+    font-size: medium;
+    margin: auto;
+    /* set background color */
+    background-color: #110c7f;
+}

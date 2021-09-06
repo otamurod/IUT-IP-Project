@@ -1,0 +1,256 @@
+
+/*
+Stylesheet for Home Page
+Date: 28/04/2021
+*/
+
+.container{
+    /* set background color */
+    background-color: white;
+    /* Use Flex Layout */
+    display: flex;
+    flex-direction: column;
+    /* Centralize the box/container */
+    max-width: 800px;
+    margin: auto;
+    min-height: max-content;
+    /* set box-sizing to border-to-border */
+    box-sizing: border-box;
+    /* Give shadow effect to the container */
+                /*x  y  blur spread color*/
+    box-shadow: 0px 8px 6px  4px    #c4bcbc;
+}
+.page-bootom{
+    max-width: 800px;
+    margin: auto;
+    min-height: max-content;
+    /* set box-sizing to border-to-border */
+    box-sizing: border-box;
+    /* Give shadow effect to the container */
+    /*x  y  blur spread color*/
+    box-shadow: 0px 8px 4px  4px    #c4bcbc;
+}
+#show-owner{
+    width: 100%;
+    height: max-content;
+    /* Use Flex Layout */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Give items equal space around them */
+    justify-content: space-evenly;
+}
+.profile, .image{
+    /* Use Flex Layout */
+    display: flex;
+    flex-direction: column;
+    /* set box-sizing to border-to-border */
+    box-sizing: border-box;
+    width: 240px;
+    /* make height flexible */
+    height: max-content;
+}
+#profile-picture{
+    max-width: 80%;
+    /* auto adjust height */
+    height: auto;
+    /* set margin. centralize the image */
+    margin: 20px auto 15px;
+    /* set border radius */
+    border-radius: 50%;
+    box-shadow: 0px 8px 6px  3px    #c4bcbc;
+}
+.follow{
+    max-width: 100%;
+    /* Centralize the box/container */
+    margin: auto;
+}
+.follow > button, #edit > button{
+    /* set height & width of the button */
+    width: 100px;
+    height: 30px;
+    color: white;
+    /* set box-sizing to border-to-border */
+    box-sizing: border-box;
+    /* give font some weight */
+    font-weight: bolder;
+        /* border-size type     color */
+    border: 2px         solid  #3535e5;
+    /* set border radius */
+    border-radius: 12px;
+    /* Give shadow effect to the button */
+                /*x  y  blur spread color*/
+    box-shadow: 0px 8px 6px  4px    #c4bcbc;
+    /*button color*/
+    background-color: #3535e5;
+    margin-top: 4px;
+}
+a{
+    /* make link/anchor non-underlined */
+    text-decoration: none;
+}
+/*a is a child of a button*/
+button > a{
+    /*font size*/
+    font-size: 11pt;
+    /*font color*/
+    color: white;
+}
+.welcome-message{
+    /* Use Flex Layout */
+    display: flex;
+    /*contents flow from top to bottom*/
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 34em;
+    /*margin:
+    -top=20px,
+    -right&left=auto(center element)
+    -bottom=2px*/
+    margin: 20px auto 2px;
+    /*give padding*/
+    padding: 4px;
+}
+#greeting{
+    font-family: SansSerif;
+    font-size: 20pt;
+    color: #4f48ef;
+    text-align: left;
+}
+p.p-home{
+    /*relative width size*/
+    width: 90%;
+    margin-left: 0;
+
+}
+hr#home{
+    /*relative width size*/
+    width: 97%;
+    height: 2px;
+    margin-left: 0;
+    border: 1px solid #10c710;
+    background-color: #10c710;
+}
+#inspire{
+    text-align: center;
+    color: #7373f1;
+    font-family: Bangers;
+    font-size: 20pt;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 4px;
+}
+
+/*
+Stylesheet for About Page
+Date: 29/04/2021
+*/
+
+.about-me{
+    max-width: 100%;
+    margin: auto;
+    font-family: "Source Sans Pro", sans-serif;
+    /*use uppercase letters*/
+    text-transform: uppercase;
+    color: #4e4d4d;
+}
+#hr-about{
+    width: 92%;
+    height: 2px;
+    margin: 0;
+    border: 1px solid #10c710;
+    background-color: #10c710;
+}
+#about-me-body, #blog-body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    height: max-content;
+    box-sizing: border-box;
+    padding: 6px;
+}
+.article{
+    max-width: 90%;
+    margin: auto;
+}
+.article > p{
+    width: 95%;
+    margin: 6px auto 6px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    font-family: "Times New Roman";
+    font-size: 14pt;
+}
+p#invite{
+    font-family: "Source Sans Pro", sans-serif;
+    /*use uppercase letters*/
+    text-transform: uppercase;
+    color: #4e4d4d;
+    font-weight: bolder;
+    /*align to the center*/
+    text-align: center;
+    width: 100%;
+}
+#invite > a{
+    color: #1d1799;
+}
+#invite > a:hover{
+    color: #10c710;
+}
+.about-image{
+    max-width: 95%;
+    height: max-content;
+    margin: auto;
+    margin-bottom: 10px;
+    /* Give shadow effect to the button */
+                /*x  y  blur spread color*/
+    box-shadow: 0px 0px 6px  4px    #c4bcbc;
+}
+#event{
+    width: 100%;
+    height: auto;
+}
+.about-image > figcaption{
+    text-align: center;
+    padding: 4px;
+    color: #4e4d4d;
+    font-family: serif;
+    font-size: 12pt;
+    text-decoration: none;
+}
+
+/*
+Stylesheet for Blog Page
+Date: 30/04/2021
+*/
+.blogs{
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0;
+}
+.blog{
+    width: 100%;
+    border: 1px solid #e3f1f3;
+    border-radius: 8px;
+/*padding   T&B  L&R*/
+    padding: 8px 0;
+    margin-top: 16px;
+    background-color: rgb(140, 179, 219);
+    /* Give shadow effect to the button */
+                /*x  y  blur spread color*/
+    box-shadow: -3px 3px 6px  2px    #c4bcbc;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    font-family: "Lato Medium";
+}
+.title{
+    font-size: 16pt;
+    color: #454444;
+}
+.posted-date{
+    font-size: 12pt;
+    color: #6f6e6e;
+}

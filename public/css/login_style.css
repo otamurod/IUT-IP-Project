@@ -1,0 +1,107 @@
+.head-register, .head-login{
+    background-color: #2ca122;
+    margin: 0.5em;
+    /* Give shadow effect to the container */
+                /*x  y  blur spread color*/
+    box-shadow: 0px 8px 6px  4px    #c4bcbc;
+}
+.signup, .login{
+    max-width: 70%;
+    margin: auto;
+    padding: 0.5em;
+    /* Give shadow effect to the container */
+                /*x  y  blur spread color*/
+    box-shadow: 0px 8px 6px  4px    #c4bcbc;
+}
+h1, h2,h4 {
+    font-family: "Rasa SemiBold";
+    font-weight: bolder;
+    text-align: center;
+}
+h2,h4{
+    color: white;
+}
+
+.onecole {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.twocols {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.twocols_col {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.logout_panel {
+    float: right;
+    width: 200px;
+    text-align: right;
+}
+
+ul.form {
+    list-style: none;
+    padding: 0;
+}
+
+
+.card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 20px;
+}
+label{
+    font-family: "Rasa SemiBold";
+    color: limegreen;
+    font-size: 16pt;
+}
+input[type=text], input[type=password], input[type=email], textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    max-width: 100%;
+    background-color: #4CAF50;
+    font-size: 14pt;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+a{
+    text-decoration: none;
+    color: #352ec6;
+}
+.page-bootom{
+    max-width: 800px;
+    margin: auto;
+    min-height: max-content;
+    /* set box-sizing to border-to-border */
+    box-sizing: border-box;
+    /* Give shadow effect to the container */
+    /*x  y  blur spread color*/
+    box-shadow: 0px 8px 4px  4px    #c4bcbc;
+}
+.space{
+    height: 2em;
+}

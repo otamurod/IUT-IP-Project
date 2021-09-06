@@ -1,0 +1,196 @@
+
+body{
+    /* set margin to 0 over the page*/
+    margin: 0;
+}
+.header, .right-header, .left-header{
+    display: inline-flex;
+    align-items: center;
+    /*header font-style*/
+    font-family: "DejaVu Serif Condensed",  SansSerif;
+    font-size: 18pt;
+    font-weight: bold;
+    /*give whole width to the block*/
+    width: 100%;
+    height: 3em;
+}
+.header{
+    /*positioned based on the user's scroll position */
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #fff!important;
+    top: 0;
+    z-index: 1020;
+    justify-content: space-between;
+    /* Give shadow effect to the container */
+                /*x  y  blur spread color*/
+    box-shadow: 0px 5px 4px  2px    #c4bcbc;
+}
+div.left-header{
+    /*relative width:
+    60% of width of the header class*/
+    width: 60%;
+    justify-content: start;
+    /*font color*/
+    color: #3a3ae5;
+}
+div.right-header{
+    width: 38%;
+    flex-direction: row-reverse;
+    margin-right: 14%;
+
+}
+#home, #about, #blog, #register, #login{
+    margin-left: 3%;
+    width: max-content;
+    text-align: center;
+}
+#register, #login{
+    color: #10c710;
+}
+
+/*
+Style dropdown-menu
+HERE
+*/
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.dropdown {
+    position: relative;
+    margin-right: 14%;
+}
+.dropdown > .dropdown-toggle{
+    color: #10c710;
+}
+.dropdown-toggle:focus {
+    outline: 0;
+    /*set bg color*/
+    background-color: limegreen;
+    /*set radius*/
+    border-radius: 6px;
+    /*specify border*/
+    border: 7px solid limegreen;
+    /*font-color changes to white*/
+    color: white;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+.dropdown-menu > li{
+    border: none;
+    padding: inherit;
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333333;
+    white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    text-decoration: none;
+    color: #262626;
+    padding: 3px 20px;
+    font-size: 14pt;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    text-decoration: none;
+    outline: 0;
+    background-color: #337ab7;
+
+}
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+    color: #777777;
+}
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    cursor: not-allowed;
+}
+.open > .dropdown-menu {
+    display: block;
+}
+.open > a {
+    outline: 0;
+}
+
+
+/*end of dropdown-menu
+decoration
+*/
+
+.header a{
+    /*remove underline property*/
+    text-decoration: none;
+    /*inherit the given font-color*/
+    /*it will be green*/
+    color: inherit;
+}
+/*use hover effect for more performance*/
+.left-header a:hover{
+    /*set bg color*/
+    background-color: #2222e5;
+    /*set radius*/
+    border-radius: 6px;
+    /*specify border*/
+    border: 1px solid #2222e5;
+    font-size: 16pt;
+
+    padding: 3px;
+
+    /*font-color changes to white*/
+    color: white;
+}
+.right-header a:hover{
+    /*set bg color*/
+    background-color: limegreen;
+    /*set radius*/
+    border-radius: 6px;
+    /*specify border*/
+    border: 1px solid limegreen;
+    font-size: 16pt;
+
+    padding: 5px;
+    /*font-color changes to white*/
+    color: white;
+}

@@ -1,0 +1,52 @@
+.contact{
+    /* Use Flex Layout */
+    display: flex;
+    flex-direction: column;
+    /*distribute space left evenly*/
+    justify-content: space-evenly;
+    max-width: 800px;
+    margin: auto;
+    min-height: max-content;
+    /*font-family*/
+    font-family: "Rasa SemiBold";
+    font-size: 16pt;
+    /*align text at the center*/
+    text-align: center;
+    /*font-color*/
+    color: white;
+    /* set background color */
+    background-color: #1d1799;
+}
+#contact-show{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+p{
+    margin: 0;
+    padding: 8px;
+}
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    justify-content: space-evenly;
+}
+.contact-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    width: 25%;
+    margin: 0;
+}
+.contact-detail > p{
+    padding-left: 22%;
+}
+.contact a{
+    text-decoration: none;
+    color: white;
+}
+.contact a:hover{
+    color: #05e505;
+}
